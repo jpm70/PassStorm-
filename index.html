@@ -39,7 +39,7 @@
         }
 
         header h1 {
-            color: var--primary-color);
+            color: var(--primary-color); /* Corregido: removido guión extra */
             font-size: 2.5em;
             margin-bottom: 5px;
         }
@@ -95,6 +95,12 @@
         .instructions li {
             margin-bottom: 10px;
         }
+
+        .external-notice {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -107,7 +113,7 @@
 
         <section id="descripcion">
             <h2>¿Qué es PassStorm?</h2>
-            <p>PassStorm es una aplicación portable de escritorio desarrollada en Python para auditar la seguridad de archivos RAR cifrados. Utiliza un extenso diccionario (RockYou.txt) para probar miles de contraseñas por segundo, ofreciendo una interfaz gráfica sencilla e intuitiva.</p>
+            <p>PassStorm es una aplicación portable de escritorio desarrollada en Python para auditar la seguridad de archivos RAR cifrados. Utiliza un extenso diccionario (RockYou.txt) para probar miles de contraseñas por segundo, ofreciendo una **interfaz gráfica (GUI)** sencilla e intuitiva.</p>
             <p><strong>Ventajas clave:</strong></p>
             <ul>
                 <li><strong>Portable:</strong> No requiere instalación de Python ni de librerías.</li>
@@ -118,25 +124,25 @@
 
         <section id="descarga">
             <h2>📥 Descarga</h2>
-            <p>La aplicación no se ejecuta en el navegador. Necesitas descargar dos archivos para usarla.</p>
+            <p>La aplicación no se ejecuta en el navegador. Necesitas descargar el paquete que contiene la aplicación y el binario de descifrado.</p>
             
-            <a href="URL_A_TU_RELEASE_AQUÍ" class="download-btn">Descargar la Versión más Reciente</a>
+            <a href="https://sourceforge.net/projects/distroteca/files/PassStorm.rar/download" class="download-btn">Descargar PassStorm (v1.0)</a>
             
-            <p style="margin-top: 20px;">*Reemplaza <code>URL_A_TU_RELEASE_AQUÍ</code> con el enlace directo al archivo ZIP de tu "Release" en GitHub.</p>
+            <p class="external-notice">*Descarga alojada de forma segura en SourceForge.</p>
         </section>
 
         <section id="uso" class="instructions">
             <h2>🛠️ Instrucciones de Uso (Portabilidad)</h2>
             <ol>
-                <li>Descarga el archivo ZIP de la sección "Releases" de este repositorio.</li>
-                <li>Extrae el contenido en cualquier carpeta (ej. el Escritorio). Obtendrás dos archivos: 
+                <li>Descarga el archivo <strong><code>PassStorm.rar</code></strong> desde el enlace anterior.</li>
+                <li><strong>Extrae el contenido</strong> en cualquier carpeta (ej. el Escritorio). Obtendrás dos archivos: 
                     <br><code>PassStorm.exe</code> y <code>UnRAR.exe</code>.</li>
                 <li>Asegúrate de que el archivo RAR cifrado que deseas auditar esté accesible.</li>
-                <li>Haz doble clic en <strong><code>PassStorm.exe</code></strong>.</li>
-                <li>En la interfaz gráfica, haz clic en el botón **"Seleccionar"** y elige el archivo <code>.rar</code>.</li>
+                <li>Haz doble clic en <strong><code>PassStorm.exe</code></strong>. La interfaz gráfica se abrirá.</li>
+                <li>Haz clic en el botón **"Seleccionar"** en la GUI y elige el archivo <code>.rar</code> cifrado.</li>
                 <li>Haz clic en **"INICIAR ATAQUE (PassStorm)"** y el progreso aparecerá en el registro.</li>
             </ol>
-            <p><strong>Nota importante:</strong> <code>PassStorm.exe</code> y <code>UnRAR.exe</code> deben estar siempre en la misma carpeta para funcionar.</p>
+            <p><strong>Nota importante:</strong> <code>PassStorm.exe</code> y <code>UnRAR.exe</code> **deben estar siempre en la misma carpeta** para que la herramienta funcione correctamente.</p>
         </section>
         
         <section id="licencia">
