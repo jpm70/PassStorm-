@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassStorm: Auditor de Contraseñas RAR Portable</title>
+    <style>
+        :root {
+            --primary-color: #e53935; /* Rojo de alerta/seguridad */
+            --secondary-color: #3f51b5; /* Azul oscuro/confiable */
+            --background-color: #f4f4f4;
+            --text-color: #333;
+            --code-bg: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--primary-color);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: var--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            color: var(--secondary-color);
+            font-size: 1.2em;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 10px 0;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        /* Estilos de Botón/Descarga */
+        .download-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.1s;
+            margin-top: 15px;
+        }
+
+        .download-btn:hover {
+            background-color: #d32f2f; /* Rojo más oscuro al pasar el ratón */
+            transform: translateY(-2px);
+        }
+
+        /* Estilos para el código y el PATH */
+        code {
+            background-color: var(--code-bg);
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'Consolas', monospace;
+        }
+
+        .instructions ol {
+            padding-left: 20px;
+        }
+
+        .instructions li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🔒 PassStorm v1.0</h1>
+            <p class="tagline">Herramienta de Auditoría de Contraseñas para Archivos RAR Cifrados</p>
+        </header>
+
+        <section id="descripcion">
+            <h2>¿Qué es PassStorm?</h2>
+            <p>PassStorm es una aplicación portable de escritorio desarrollada en Python para auditar la seguridad de archivos RAR cifrados. Utiliza un extenso diccionario (RockYou.txt) para probar miles de contraseñas por segundo, ofreciendo una interfaz gráfica sencilla e intuitiva.</p>
+            <p><strong>Ventajas clave:</strong></p>
+            <ul>
+                <li><strong>Portable:</strong> No requiere instalación de Python ni de librerías.</li>
+                <li><strong>Interfaz Gráfica (GUI):</strong> Olvídate de la consola, selecciona el archivo con un clic.</li>
+                <li><strong>Potente:</strong> Utiliza el binario de consola UnRAR para máxima eficiencia.</li>
+            </ul>
+        </section>
+
+        <section id="descarga">
+            <h2>📥 Descarga</h2>
+            <p>La aplicación no se ejecuta en el navegador. Necesitas descargar dos archivos para usarla.</p>
+            
+            <a href="URL_A_TU_RELEASE_AQUÍ" class="download-btn">Descargar la Versión más Reciente</a>
+            
+            <p style="margin-top: 20px;">*Reemplaza <code>URL_A_TU_RELEASE_AQUÍ</code> con el enlace directo al archivo ZIP de tu "Release" en GitHub.</p>
+        </section>
+
+        <section id="uso" class="instructions">
+            <h2>🛠️ Instrucciones de Uso (Portabilidad)</h2>
+            <ol>
+                <li>Descarga el archivo ZIP de la sección "Releases" de este repositorio.</li>
+                <li>Extrae el contenido en cualquier carpeta (ej. el Escritorio). Obtendrás dos archivos: 
+                    <br><code>PassStorm.exe</code> y <code>UnRAR.exe</code>.</li>
+                <li>Asegúrate de que el archivo RAR cifrado que deseas auditar esté accesible.</li>
+                <li>Haz doble clic en <strong><code>PassStorm.exe</code></strong>.</li>
+                <li>En la interfaz gráfica, haz clic en el botón **"Seleccionar"** y elige el archivo <code>.rar</code>.</li>
+                <li>Haz clic en **"INICIAR ATAQUE (PassStorm)"** y el progreso aparecerá en el registro.</li>
+            </ol>
+            <p><strong>Nota importante:</strong> <code>PassStorm.exe</code> y <code>UnRAR.exe</code> deben estar siempre en la misma carpeta para funcionar.</p>
+        </section>
+        
+        <section id="licencia">
+            <h2>Licencia</h2>
+            <p>Este proyecto está bajo la licencia MIT (o la licencia que hayas elegido).</p>
+        </section>
+        
+        <footer style="text-align: center; color: #777; font-size: 0.8em; margin-top: 40px;">
+            &copy; 2025 PassStorm Project. Creado para propósitos de auditoría y aprendizaje.
+        </footer>
+    </div>
+</body>
+</html>
